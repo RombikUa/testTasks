@@ -1,0 +1,52 @@
+.modal-container {
+    position: fixed;
+    z-index: 1000;
+    pointer-events: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: opacity .4s cubic-bezier(.25,.8,.25,1);
+    background: rgba(0,0,0,.32);
+    opacity: 0;
+    pointer-events: auto;
+}
+
+.backdrop-showing {
+    opacity: 1;
+}
+
+.modal {
+    position: relative;
+    padding: 24px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow: auto;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12);
+    transition: all .4s cubic-bezier(.25,.8,.25,1);
+    background: #fff;
+    color: #000;
+    z-index: 1000;
+    pointer-events: auto;
+    opacity: 0;
+    transform: scale(.8);
+}
+
+.modal-showing {
+    transform: scale(1);
+    opacity: 1;
+}

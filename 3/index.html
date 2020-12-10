@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table class="js-table">
+    <thead>
+    <tr>
+        <th>No.</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Email</th>
+        <th>Date</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<form class="form js-form" novalidate>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Name*" name="name">
+        <small class="form-error"></small>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Surname*" name="surname">
+        <small class="form-error"></small>
+    </div>
+    <div class="form-group">
+        <input type="email" class="form-control" placeholder="Email*" name="email">
+        <small class="form-error"></small>
+    </div>
+
+    <button type="submit" class="form-submit">Save</button>
+</form>
+
+<script src="index.js"></script>
+</body>
+</html>

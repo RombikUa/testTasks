@@ -1,0 +1,70 @@
+table {
+    width: 100%;
+    border-spacing: 0;
+    background: #fff;
+}
+
+thead tr {
+    height: 56px;
+}
+
+th, td {
+    padding: 0 0 0 24px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    text-align: left;
+}
+
+tbody tr {
+    height: 48px;
+}
+
+.form {
+    margin-top: 30px;
+    max-width: 300px;
+}
+
+.form.is-invalid .form-group small {
+    display: block;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group small {
+    font-size: 12px;
+    color: red;
+    margin-top: 3px;
+    display: none;
+}
+
+.form-control {
+    border: 2px solid #eeeeee;
+    height: 46px;
+    margin: 10px 0 0 0;
+    padding: 1%;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #333333;
+    letter-spacing: .01em;
+    font-style: normal;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+.form-submit {
+    display: block;
+    padding: 5px 10px;
+    margin-top: 20px;
+    background: #eee;
+    color: #333;
+    text-align: center;
+    border: 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    letter-spacing: .01em;
+    font-style: normal;
+    font-weight: 300;
+}
